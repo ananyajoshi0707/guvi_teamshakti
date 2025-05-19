@@ -10,6 +10,6 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@railway/cli": "^4.4.1"
+    "@railway/cli": "^4.5.1"
   }
 }
