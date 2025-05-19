@@ -18,3 +18,6 @@ def get_user(user_id: int):
 @router.post("/users", response_model=User)
 def create_user(user: User):
     return UserController.create_user(user) 
+@router.get("/")
+def api_root():
+    return {"message": "API root working!"}

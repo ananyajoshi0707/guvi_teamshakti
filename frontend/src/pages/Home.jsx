@@ -13,6 +13,7 @@ export default function Home() {
     const fetchBackendStatus = async () => {
       try {
         const data = await checkBackendStatus();
+        console.log("Fetched backend data:", data);
         setBackendStatus(data);
       } catch (err) {
         setError('Failed to connect to backend');
@@ -71,7 +72,7 @@ export default function Home() {
               </div>
               
               <p className="text-gray-600">
-                Your frontend will be available at <code className="bg-gray-100 px-1 py-0.5 rounded">{currentUrl}</code>
+                Your frontend will be available at <code className="bg-gray-100 px-1 py-0.5 rounded">{currentUrl}/study-planner</code>.
               </p>
             </div>
           </div>
